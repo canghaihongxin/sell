@@ -1,0 +1,44 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 1234
+    url: jdbc:mysql://192.168.187.129/sell?characterEncoding=utf-8&useSSL=false
+  jpa:
+    show-sql: true
+  jackson:
+    default-property-inclusion: non_null
+    # 设定静态文件路径，js,css等
+  #mvc:
+  #  static-path-pattern: /static/**
+  freemarker:
+      cache: false
+      charset: UTF-8
+      check-template-location: true
+      content-type: text/html
+      expose-request-attributes: true
+      request-context-attribute: request
+      expose-session-attributes: true
+  redis:
+    host: 192.168.187.130
+    port: 6379
+server:
+ context-path: /sell
+
+wechat:
+  mpAppId: wxe2878eec582f3dee
+  mpAppSecret: f256f019f4a036bab0c6495615f37d81
+  openAppId:
+  openAppSecret:
+  mchId: 1247646301
+  mchKey: jdsafagowefdaslfaewoffasdfzxcvcs
+  keyPath: E:\工作\不动峰\sell\cert\apiclient_cert.p12
+  notifyUrl: http://budongfeng.tunnel.qydev.com/sell/pay/notify/
+  templateId:
+    orderStatus: s1pzihHwVXRUpK1wAvRcVmKDuwRti005rlsR0vda5wk
+
+projectUrl:
+  wechatMpAuthorize: http://budongfeng.tunnel.qydev.com
+  wechatOpenAuthorize: http://budongfeng.tunnel.qydev.com
+  sell:  http://budongfeng.tunnel.qydev.com
+

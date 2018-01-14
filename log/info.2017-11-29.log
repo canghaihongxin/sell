@@ -1,0 +1,823 @@
+Starting SellApplication on 01HL2IXBWRWCH9B with PID 8684 (D:\myworkspace\sell\target\classes started by Administrator in D:\myworkspace\sell)
+The following profiles are active: home
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@32193bea: startup date [Wed Nov 29 09:46:08 CST 2017]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.ProductInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.ProductCategoryRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.SellerInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.OrderDetailRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.23
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 6386 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@32193bea: startup date [Wed Nov 29 09:46:08 CST 2017]; root of context hierarchy
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.budongfeng.sell.vo.ResultVo<java.util.List<com.budongfeng.sell.dto.OrderDTO>> com.budongfeng.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.budongfeng.sell.vo.ResultVo<com.budongfeng.sell.dto.OrderDTO> com.budongfeng.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.budongfeng.sell.vo.ResultVo com.budongfeng.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.budongfeng.sell.vo.ResultVo<java.util.Map<java.lang.String, java.lang.String>> com.budongfeng.sell.controller.BuyerOrderController.creatOrder(com.budongfeng.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/product/list]}" onto public com.budongfeng.sell.vo.ResultVo com.budongfeng.sell.controller.BuyerProductController.productList()
+Mapped "{[/seller/category/index],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.index(java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/category/list],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.list(org.springframework.ui.ModelMap)
+Mapped "{[/seller/category/save],methods=[POST]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.catSaveOrUpdate(com.budongfeng.sell.form.CategoryForm,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.PayController.notify(java.lang.String)
+Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/list],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/detail],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.detail(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/finish],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.finish(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/cancel],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.cancel(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/list]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/save],methods=[POST]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.save(com.budongfeng.sell.form.ProductForm,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/off_sale],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.off_sale(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/on_sale],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.on_sale(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/index],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.productAddOrUpdate(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/doLogin],methods=[POST]}" onto public java.lang.String com.budongfeng.sell.controller.SellerUserController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse,org.springframework.ui.ModelMap)
+Mapped "{[/seller/login]}" onto public java.lang.String com.budongfeng.sell.controller.SellerUserController.loginPage(org.springframework.ui.ModelMap)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/wechat/qrAuthorize],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.qrauthorize(java.lang.String)
+Mapped "{[/wechat/qrUserInfo],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.quUserInfo(java.lang.String,java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.budongfeng.sell.controller.WeiXinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 22.125 seconds (JVM running for 26.712)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 67 ms
+HHH000397: Using ASTQueryTranslatorFactory
+Starting SellApplication on 01HL2IXBWRWCH9B with PID 10328 (D:\myworkspace\sell\target\classes started by Administrator in D:\myworkspace\sell)
+The following profiles are active: home
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5fe1ce85: startup date [Wed Nov 29 09:55:16 CST 2017]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.ProductInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.ProductCategoryRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.SellerInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.OrderDetailRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.23
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1817 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5fe1ce85: startup date [Wed Nov 29 09:55:16 CST 2017]; root of context hierarchy
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.budongfeng.sell.vo.ResultVo<java.util.List<com.budongfeng.sell.dto.OrderDTO>> com.budongfeng.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.budongfeng.sell.vo.ResultVo<com.budongfeng.sell.dto.OrderDTO> com.budongfeng.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.budongfeng.sell.vo.ResultVo com.budongfeng.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.budongfeng.sell.vo.ResultVo<java.util.Map<java.lang.String, java.lang.String>> com.budongfeng.sell.controller.BuyerOrderController.creatOrder(com.budongfeng.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/product/list]}" onto public com.budongfeng.sell.vo.ResultVo com.budongfeng.sell.controller.BuyerProductController.productList()
+Mapped "{[/seller/category/index],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.index(java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/category/list],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.list(org.springframework.ui.ModelMap)
+Mapped "{[/seller/category/save],methods=[POST]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.catSaveOrUpdate(com.budongfeng.sell.form.CategoryForm,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.PayController.notify(java.lang.String)
+Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/list],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/detail],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.detail(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/finish],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.finish(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/cancel],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.cancel(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/list]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/save],methods=[POST]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.save(com.budongfeng.sell.form.ProductForm,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/on_sale],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.on_sale(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/off_sale],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.off_sale(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/index],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.productAddOrUpdate(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/doLogin],methods=[POST]}" onto public java.lang.String com.budongfeng.sell.controller.SellerUserController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse,org.springframework.ui.ModelMap)
+Mapped "{[/seller/login]}" onto public java.lang.String com.budongfeng.sell.controller.SellerUserController.loginPage(org.springframework.ui.ModelMap)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/qrAuthorize],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.qrauthorize(java.lang.String)
+Mapped "{[/wechat/qrUserInfo],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.quUserInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.budongfeng.sell.controller.WeiXinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 5.972 seconds (JVM running for 6.771)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 35 ms
+HHH000397: Using ASTQueryTranslatorFactory
+Starting SellApplication on 01HL2IXBWRWCH9B with PID 2772 (D:\myworkspace\sell\target\classes started by Administrator in D:\myworkspace\sell)
+The following profiles are active: home
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@69653e16: startup date [Wed Nov 29 10:01:40 CST 2017]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.ProductInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.ProductCategoryRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.SellerInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.OrderDetailRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.23
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1821 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@69653e16: startup date [Wed Nov 29 10:01:40 CST 2017]; root of context hierarchy
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.budongfeng.sell.vo.ResultVo<java.util.List<com.budongfeng.sell.dto.OrderDTO>> com.budongfeng.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.budongfeng.sell.vo.ResultVo<com.budongfeng.sell.dto.OrderDTO> com.budongfeng.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.budongfeng.sell.vo.ResultVo com.budongfeng.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.budongfeng.sell.vo.ResultVo<java.util.Map<java.lang.String, java.lang.String>> com.budongfeng.sell.controller.BuyerOrderController.creatOrder(com.budongfeng.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/product/list]}" onto public com.budongfeng.sell.vo.ResultVo com.budongfeng.sell.controller.BuyerProductController.productList()
+Mapped "{[/seller/category/index],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.index(java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/category/list],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.list(org.springframework.ui.ModelMap)
+Mapped "{[/seller/category/save],methods=[POST]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.catSaveOrUpdate(com.budongfeng.sell.form.CategoryForm,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.PayController.notify(java.lang.String)
+Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/list],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/detail],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.detail(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/finish],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.finish(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/cancel],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.cancel(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/list]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/save],methods=[POST]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.save(com.budongfeng.sell.form.ProductForm,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/index],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.productAddOrUpdate(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/off_sale],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.off_sale(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/on_sale],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.on_sale(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/login]}" onto public java.lang.String com.budongfeng.sell.controller.SellerUserController.loginPage(org.springframework.ui.ModelMap)
+Mapped "{[/seller/doLogin],methods=[POST]}" onto public java.lang.String com.budongfeng.sell.controller.SellerUserController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse,org.springframework.ui.ModelMap)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/wechat/qrUserInfo],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.quUserInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/qrAuthorize],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.qrauthorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.budongfeng.sell.controller.WeiXinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 5.823 seconds (JVM running for 6.657)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 39 ms
+HHH000397: Using ASTQueryTranslatorFactory
+Starting SellApplication on 01HL2IXBWRWCH9B with PID 4808 (D:\myworkspace\sell\target\classes started by Administrator in D:\myworkspace\sell)
+The following profiles are active: home
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@69653e16: startup date [Wed Nov 29 10:03:50 CST 2017]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.ProductInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.ProductCategoryRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.SellerInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.OrderDetailRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.23
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1791 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@69653e16: startup date [Wed Nov 29 10:03:50 CST 2017]; root of context hierarchy
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.budongfeng.sell.vo.ResultVo<java.util.List<com.budongfeng.sell.dto.OrderDTO>> com.budongfeng.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.budongfeng.sell.vo.ResultVo<com.budongfeng.sell.dto.OrderDTO> com.budongfeng.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.budongfeng.sell.vo.ResultVo com.budongfeng.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.budongfeng.sell.vo.ResultVo<java.util.Map<java.lang.String, java.lang.String>> com.budongfeng.sell.controller.BuyerOrderController.creatOrder(com.budongfeng.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/product/list]}" onto public com.budongfeng.sell.vo.ResultVo com.budongfeng.sell.controller.BuyerProductController.productList()
+Mapped "{[/seller/category/index],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.index(java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/category/list],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.list(org.springframework.ui.ModelMap)
+Mapped "{[/seller/category/save],methods=[POST]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.catSaveOrUpdate(com.budongfeng.sell.form.CategoryForm,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.PayController.notify(java.lang.String)
+Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/list],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/detail],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.detail(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/finish],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.finish(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/cancel],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.cancel(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/list]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/save],methods=[POST]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.save(com.budongfeng.sell.form.ProductForm,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/index],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.productAddOrUpdate(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/on_sale],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.on_sale(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/off_sale],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.off_sale(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/doLogin],methods=[POST]}" onto public java.lang.String com.budongfeng.sell.controller.SellerUserController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse,org.springframework.ui.ModelMap)
+Mapped "{[/seller/login]}" onto public java.lang.String com.budongfeng.sell.controller.SellerUserController.loginPage(org.springframework.ui.ModelMap)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/wechat/qrAuthorize],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.qrauthorize(java.lang.String)
+Mapped "{[/wechat/qrUserInfo],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.quUserInfo(java.lang.String,java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.budongfeng.sell.controller.WeiXinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 5.899 seconds (JVM running for 6.611)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 37 ms
+HHH000397: Using ASTQueryTranslatorFactory
+Starting SellApplication on 01HL2IXBWRWCH9B with PID 1592 (D:\myworkspace\sell\target\classes started by Administrator in D:\myworkspace\sell)
+The following profiles are active: home
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@69653e16: startup date [Wed Nov 29 10:09:40 CST 2017]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.ProductInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.ProductCategoryRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.SellerInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.OrderDetailRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.23
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1872 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@69653e16: startup date [Wed Nov 29 10:09:40 CST 2017]; root of context hierarchy
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.budongfeng.sell.vo.ResultVo<java.util.List<com.budongfeng.sell.dto.OrderDTO>> com.budongfeng.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.budongfeng.sell.vo.ResultVo<com.budongfeng.sell.dto.OrderDTO> com.budongfeng.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.budongfeng.sell.vo.ResultVo com.budongfeng.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.budongfeng.sell.vo.ResultVo<java.util.Map<java.lang.String, java.lang.String>> com.budongfeng.sell.controller.BuyerOrderController.creatOrder(com.budongfeng.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/product/list]}" onto public com.budongfeng.sell.vo.ResultVo com.budongfeng.sell.controller.BuyerProductController.productList()
+Mapped "{[/seller/category/index],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.index(java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/category/list],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.list(org.springframework.ui.ModelMap)
+Mapped "{[/seller/category/save],methods=[POST]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.catSaveOrUpdate(com.budongfeng.sell.form.CategoryForm,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.PayController.notify(java.lang.String)
+Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/list],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/finish],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.finish(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/detail],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.detail(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/cancel],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.cancel(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/list]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/save],methods=[POST]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.save(com.budongfeng.sell.form.ProductForm,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/index],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.productAddOrUpdate(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/off_sale],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.off_sale(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/on_sale],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.on_sale(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/login]}" onto public java.lang.String com.budongfeng.sell.controller.SellerUserController.loginPage(org.springframework.ui.ModelMap)
+Mapped "{[/seller/doLogin],methods=[POST]}" onto public java.lang.String com.budongfeng.sell.controller.SellerUserController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse,org.springframework.ui.ModelMap)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/qrAuthorize],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.qrauthorize(java.lang.String)
+Mapped "{[/wechat/qrUserInfo],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.quUserInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.budongfeng.sell.controller.WeiXinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 5.988 seconds (JVM running for 6.722)
+Starting SellApplication on 01HL2IXBWRWCH9B with PID 9124 (D:\myworkspace\sell\target\classes started by Administrator in D:\myworkspace\sell)
+The following profiles are active: home
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2631f68c: startup date [Wed Nov 29 10:10:04 CST 2017]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.ProductInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.ProductCategoryRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.SellerInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.OrderDetailRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.23
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1820 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2631f68c: startup date [Wed Nov 29 10:10:04 CST 2017]; root of context hierarchy
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.budongfeng.sell.vo.ResultVo<java.util.List<com.budongfeng.sell.dto.OrderDTO>> com.budongfeng.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.budongfeng.sell.vo.ResultVo com.budongfeng.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.budongfeng.sell.vo.ResultVo<com.budongfeng.sell.dto.OrderDTO> com.budongfeng.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.budongfeng.sell.vo.ResultVo<java.util.Map<java.lang.String, java.lang.String>> com.budongfeng.sell.controller.BuyerOrderController.creatOrder(com.budongfeng.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/product/list]}" onto public com.budongfeng.sell.vo.ResultVo com.budongfeng.sell.controller.BuyerProductController.productList()
+Mapped "{[/seller/category/index],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.index(java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/category/list],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.list(org.springframework.ui.ModelMap)
+Mapped "{[/seller/category/save],methods=[POST]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.catSaveOrUpdate(com.budongfeng.sell.form.CategoryForm,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.PayController.notify(java.lang.String)
+Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/list],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/cancel],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.cancel(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/detail],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.detail(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/finish],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.finish(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/list]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/save],methods=[POST]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.save(com.budongfeng.sell.form.ProductForm,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/index],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.productAddOrUpdate(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/off_sale],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.off_sale(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/on_sale],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.on_sale(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/doLogin],methods=[POST]}" onto public java.lang.String com.budongfeng.sell.controller.SellerUserController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse,org.springframework.ui.ModelMap)
+Mapped "{[/seller/login]}" onto public java.lang.String com.budongfeng.sell.controller.SellerUserController.loginPage(org.springframework.ui.ModelMap)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/qrAuthorize],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.qrauthorize(java.lang.String)
+Mapped "{[/wechat/qrUserInfo],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.quUserInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.budongfeng.sell.controller.WeiXinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 5.956 seconds (JVM running for 6.742)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 40 ms
+HHH000397: Using ASTQueryTranslatorFactory
+Starting SellApplication on 01HL2IXBWRWCH9B with PID 8760 (D:\myworkspace\sell\target\classes started by Administrator in D:\myworkspace\sell)
+The following profiles are active: home
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5fe1ce85: startup date [Wed Nov 29 10:13:34 CST 2017]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.ProductInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.ProductCategoryRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.SellerInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.OrderDetailRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.23
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1844 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5fe1ce85: startup date [Wed Nov 29 10:13:34 CST 2017]; root of context hierarchy
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.budongfeng.sell.vo.ResultVo<java.util.List<com.budongfeng.sell.dto.OrderDTO>> com.budongfeng.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.budongfeng.sell.vo.ResultVo com.budongfeng.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.budongfeng.sell.vo.ResultVo<com.budongfeng.sell.dto.OrderDTO> com.budongfeng.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.budongfeng.sell.vo.ResultVo<java.util.Map<java.lang.String, java.lang.String>> com.budongfeng.sell.controller.BuyerOrderController.creatOrder(com.budongfeng.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/product/list]}" onto public com.budongfeng.sell.vo.ResultVo com.budongfeng.sell.controller.BuyerProductController.productList()
+Mapped "{[/seller/category/index],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.index(java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/category/list],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.list(org.springframework.ui.ModelMap)
+Mapped "{[/seller/category/save],methods=[POST]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.catSaveOrUpdate(com.budongfeng.sell.form.CategoryForm,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.PayController.notify(java.lang.String)
+Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/list],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/cancel],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.cancel(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/finish],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.finish(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/detail],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.detail(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/list]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/save],methods=[POST]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.save(com.budongfeng.sell.form.ProductForm,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/off_sale],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.off_sale(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/on_sale],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.on_sale(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/index],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.productAddOrUpdate(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/login]}" onto public java.lang.String com.budongfeng.sell.controller.SellerUserController.loginPage(org.springframework.ui.ModelMap)
+Mapped "{[/seller/doLogin],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.SellerUserController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse,org.springframework.ui.ModelMap)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/wechat/qrUserInfo],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.quUserInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/qrAuthorize],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.qrauthorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.budongfeng.sell.controller.WeiXinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 5.912 seconds (JVM running for 6.676)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 39 ms
+HHH000397: Using ASTQueryTranslatorFactory
+Starting SellApplication on 01HL2IXBWRWCH9B with PID 6232 (D:\myworkspace\sell\target\classes started by Administrator in D:\myworkspace\sell)
+The following profiles are active: home
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@69653e16: startup date [Wed Nov 29 10:15:58 CST 2017]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.ProductInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.ProductCategoryRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.SellerInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.OrderDetailRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.23
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1778 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@69653e16: startup date [Wed Nov 29 10:15:58 CST 2017]; root of context hierarchy
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.budongfeng.sell.vo.ResultVo<java.util.List<com.budongfeng.sell.dto.OrderDTO>> com.budongfeng.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.budongfeng.sell.vo.ResultVo com.budongfeng.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.budongfeng.sell.vo.ResultVo<com.budongfeng.sell.dto.OrderDTO> com.budongfeng.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.budongfeng.sell.vo.ResultVo<java.util.Map<java.lang.String, java.lang.String>> com.budongfeng.sell.controller.BuyerOrderController.creatOrder(com.budongfeng.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/product/list]}" onto public com.budongfeng.sell.vo.ResultVo com.budongfeng.sell.controller.BuyerProductController.productList()
+Mapped "{[/seller/category/index],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.index(java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/category/list],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.list(org.springframework.ui.ModelMap)
+Mapped "{[/seller/category/save],methods=[POST]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.catSaveOrUpdate(com.budongfeng.sell.form.CategoryForm,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.PayController.notify(java.lang.String)
+Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/list],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/finish],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.finish(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/cancel],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.cancel(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/detail],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.detail(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/list]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/save],methods=[POST]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.save(com.budongfeng.sell.form.ProductForm,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/index],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.productAddOrUpdate(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/on_sale],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.on_sale(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/off_sale],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.off_sale(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/doLogin],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.SellerUserController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse,org.springframework.ui.ModelMap)
+Mapped "{[/seller/login]}" onto public java.lang.String com.budongfeng.sell.controller.SellerUserController.loginPage(org.springframework.ui.ModelMap)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/wechat/qrUserInfo],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.quUserInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/qrAuthorize],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.qrauthorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.budongfeng.sell.controller.WeiXinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 5.827 seconds (JVM running for 6.536)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 40 ms
+HHH000397: Using ASTQueryTranslatorFactory
+Starting SellApplication on 01HL2IXBWRWCH9B with PID 9904 (D:\myworkspace\sell\target\classes started by Administrator in D:\myworkspace\sell)
+The following profiles are active: home
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@69653e16: startup date [Wed Nov 29 10:24:10 CST 2017]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.ProductInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.ProductCategoryRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.SellerInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.OrderDetailRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.23
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1780 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@69653e16: startup date [Wed Nov 29 10:24:10 CST 2017]; root of context hierarchy
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.budongfeng.sell.vo.ResultVo<java.util.List<com.budongfeng.sell.dto.OrderDTO>> com.budongfeng.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.budongfeng.sell.vo.ResultVo<com.budongfeng.sell.dto.OrderDTO> com.budongfeng.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.budongfeng.sell.vo.ResultVo com.budongfeng.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.budongfeng.sell.vo.ResultVo<java.util.Map<java.lang.String, java.lang.String>> com.budongfeng.sell.controller.BuyerOrderController.creatOrder(com.budongfeng.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/product/list]}" onto public com.budongfeng.sell.vo.ResultVo com.budongfeng.sell.controller.BuyerProductController.productList()
+Mapped "{[/seller/category/index],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.index(java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/category/list],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.list(org.springframework.ui.ModelMap)
+Mapped "{[/seller/category/save],methods=[POST]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.catSaveOrUpdate(com.budongfeng.sell.form.CategoryForm,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.PayController.notify(java.lang.String)
+Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/list],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/finish],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.finish(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/detail],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.detail(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/cancel],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.cancel(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/list]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/save],methods=[POST]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.save(com.budongfeng.sell.form.ProductForm,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/index],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.productAddOrUpdate(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/on_sale],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.on_sale(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/off_sale],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.off_sale(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/login]}" onto public java.lang.String com.budongfeng.sell.controller.SellerUserController.loginPage(org.springframework.ui.ModelMap)
+Mapped "{[/seller/doLogin],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.SellerUserController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse,org.springframework.ui.ModelMap)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/qrUserInfo],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.quUserInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/qrAuthorize],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.qrauthorize(java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.budongfeng.sell.controller.WeiXinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 5.758 seconds (JVM running for 6.493)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 42 ms
+HHH000397: Using ASTQueryTranslatorFactory
+Starting SellApplication on 01HL2IXBWRWCH9B with PID 11340 (D:\myworkspace\sell\target\classes started by Administrator in D:\myworkspace\sell)
+The following profiles are active: home
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7f132176: startup date [Wed Nov 29 11:00:30 CST 2017]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.ProductInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.ProductCategoryRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.SellerInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.OrderDetailRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.23
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1846 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7f132176: startup date [Wed Nov 29 11:00:30 CST 2017]; root of context hierarchy
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.budongfeng.sell.vo.ResultVo<java.util.List<com.budongfeng.sell.dto.OrderDTO>> com.budongfeng.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.budongfeng.sell.vo.ResultVo<com.budongfeng.sell.dto.OrderDTO> com.budongfeng.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.budongfeng.sell.vo.ResultVo com.budongfeng.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.budongfeng.sell.vo.ResultVo<java.util.Map<java.lang.String, java.lang.String>> com.budongfeng.sell.controller.BuyerOrderController.creatOrder(com.budongfeng.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/product/list]}" onto public com.budongfeng.sell.vo.ResultVo com.budongfeng.sell.controller.BuyerProductController.productList()
+Mapped "{[/seller/category/index],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.index(java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/category/list],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.list(org.springframework.ui.ModelMap)
+Mapped "{[/seller/category/save],methods=[POST]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.catSaveOrUpdate(com.budongfeng.sell.form.CategoryForm,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.PayController.notify(java.lang.String)
+Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/list],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/detail],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.detail(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/finish],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.finish(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/cancel],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.cancel(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/list]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/save],methods=[POST]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.save(com.budongfeng.sell.form.ProductForm,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/index],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.productAddOrUpdate(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/on_sale],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.on_sale(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/off_sale],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.off_sale(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/logout],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerUserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.ModelMap)
+Mapped "{[/seller/doLogin],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.SellerUserController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse,org.springframework.ui.ModelMap)
+Mapped "{[/seller/login]}" onto public java.lang.String com.budongfeng.sell.controller.SellerUserController.loginPage(org.springframework.ui.ModelMap)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/qrAuthorize],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.qrauthorize(java.lang.String)
+Mapped "{[/wechat/qrUserInfo],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.quUserInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.budongfeng.sell.controller.WeiXinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 5.847 seconds (JVM running for 6.789)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 39 ms
+HHH000397: Using ASTQueryTranslatorFactory
+Starting SellApplication on 01HL2IXBWRWCH9B with PID 10400 (D:\myworkspace\sell\target\classes started by Administrator in D:\myworkspace\sell)
+The following profiles are active: home
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@69653e16: startup date [Wed Nov 29 11:01:44 CST 2017]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.ProductInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.ProductCategoryRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.SellerInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.OrderDetailRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.23
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1783 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@69653e16: startup date [Wed Nov 29 11:01:44 CST 2017]; root of context hierarchy
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.budongfeng.sell.vo.ResultVo<java.util.List<com.budongfeng.sell.dto.OrderDTO>> com.budongfeng.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.budongfeng.sell.vo.ResultVo<com.budongfeng.sell.dto.OrderDTO> com.budongfeng.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.budongfeng.sell.vo.ResultVo com.budongfeng.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.budongfeng.sell.vo.ResultVo<java.util.Map<java.lang.String, java.lang.String>> com.budongfeng.sell.controller.BuyerOrderController.creatOrder(com.budongfeng.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/product/list]}" onto public com.budongfeng.sell.vo.ResultVo com.budongfeng.sell.controller.BuyerProductController.productList()
+Mapped "{[/seller/category/index],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.index(java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/category/list],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.list(org.springframework.ui.ModelMap)
+Mapped "{[/seller/category/save],methods=[POST]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.catSaveOrUpdate(com.budongfeng.sell.form.CategoryForm,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.PayController.notify(java.lang.String)
+Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/seller/order/list],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/detail],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.detail(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/cancel],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.cancel(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/finish],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.finish(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/list]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/save],methods=[POST]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.save(com.budongfeng.sell.form.ProductForm,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/index],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.productAddOrUpdate(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/on_sale],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.on_sale(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/off_sale],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.off_sale(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/doLogin],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.SellerUserController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse,org.springframework.ui.ModelMap)
+Mapped "{[/seller/login]}" onto public java.lang.String com.budongfeng.sell.controller.SellerUserController.loginPage(org.springframework.ui.ModelMap)
+Mapped "{[/seller/logout],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerUserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.ModelMap)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/wechat/qrUserInfo],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.quUserInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/qrAuthorize],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.qrauthorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.budongfeng.sell.controller.WeiXinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 5.906 seconds (JVM running for 6.606)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 36 ms
+HHH000397: Using ASTQueryTranslatorFactory

@@ -1,0 +1,2132 @@
+Starting SellApplication on 01HL2IXBWRWCH9B with PID 4896 (D:\myworkspace\sell\target\classes started by Administrator in D:\myworkspace\sell)
+The following profiles are active: home
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7b84fcf8: startup date [Thu Jan 04 20:18:01 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.ProductInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.ProductCategoryRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.SellerInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.OrderDetailRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.23
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 9362 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Unable to determine jdbc url from datasource
+org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:339)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:366)
+	at org.springframework.boot.autoconfigure.orm.jpa.DatabaseLookup.getDatabase(DatabaseLookup.java:72)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties.determineDatabase(JpaProperties.java:139)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.jpaVendorAdapter(JpaBaseConfiguration.java:105)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$6e18c9f9.CGLIB$jpaVendorAdapter$5(<generated>)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$6e18c9f9$$FastClassBySpringCGLIB$$21d444dd.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$6e18c9f9.jpaVendorAdapter(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1078)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.budongfeng.sell.SellApplication.main(SellApplication.java:14)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:326)
+	... 61 common frames omitted
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:341)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2189)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2222)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2017)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:779)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:735)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:667)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:482)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77)
+	... 62 common frames omitted
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300)
+	... 85 common frames omitted
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000342: Could not obtain connection to query metadata : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+Stopping service [Tomcat]
+
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+Starting SellApplication on 01HL2IXBWRWCH9B with PID 14068 (D:\myworkspace\sell\target\classes started by Administrator in D:\myworkspace\sell)
+The following profiles are active: home
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@16ce702d: startup date [Thu Jan 04 20:21:13 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.ProductInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.ProductCategoryRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.SellerInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.OrderDetailRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.23
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 2259 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Unable to determine jdbc url from datasource
+org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:339)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:366)
+	at org.springframework.boot.autoconfigure.orm.jpa.DatabaseLookup.getDatabase(DatabaseLookup.java:72)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties.determineDatabase(JpaProperties.java:139)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.jpaVendorAdapter(JpaBaseConfiguration.java:105)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$a31ebf00.CGLIB$jpaVendorAdapter$6(<generated>)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$a31ebf00$$FastClassBySpringCGLIB$$42298b48.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$a31ebf00.jpaVendorAdapter(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1078)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.budongfeng.sell.SellApplication.main(SellApplication.java:14)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:326)
+	... 61 common frames omitted
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:341)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2189)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2222)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2017)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:779)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:735)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:667)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:482)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77)
+	... 62 common frames omitted
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300)
+	... 85 common frames omitted
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000342: Could not obtain connection to query metadata : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+Stopping service [Tomcat]
+
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+Starting SellApplication on 01HL2IXBWRWCH9B with PID 12844 (D:\myworkspace\sell\target\classes started by Administrator in D:\myworkspace\sell)
+The following profiles are active: home
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@33b1c5c5: startup date [Thu Jan 04 20:23:10 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.ProductInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.ProductCategoryRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.SellerInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.OrderDetailRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.23
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 2261 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Unable to determine jdbc url from datasource
+org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'192.168.187.1' (using password: YES)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:339)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:366)
+	at org.springframework.boot.autoconfigure.orm.jpa.DatabaseLookup.getDatabase(DatabaseLookup.java:72)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties.determineDatabase(JpaProperties.java:139)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.jpaVendorAdapter(JpaBaseConfiguration.java:105)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$6d1031cc.CGLIB$jpaVendorAdapter$5(<generated>)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$6d1031cc$$FastClassBySpringCGLIB$$ec675d89.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$6d1031cc.jpaVendorAdapter(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1078)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.budongfeng.sell.SellApplication.main(SellApplication.java:14)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: Access denied for user 'root'@'192.168.187.1' (using password: YES)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:326)
+	... 61 common frames omitted
+Caused by: java.sql.SQLException: Access denied for user 'root'@'192.168.187.1' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:964)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2191)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2222)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2017)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:779)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:735)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:667)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:482)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77)
+	... 62 common frames omitted
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000342: Could not obtain connection to query metadata : Access denied for user 'root'@'192.168.187.1' (using password: YES)
+Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+Stopping service [Tomcat]
+
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+Starting SellApplication on 01HL2IXBWRWCH9B with PID 10384 (D:\myworkspace\sell\target\classes started by Administrator in D:\myworkspace\sell)
+The following profiles are active: home
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@33b1c5c5: startup date [Thu Jan 04 20:23:20 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.ProductInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.ProductCategoryRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.SellerInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.OrderDetailRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.23
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 2152 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Unable to determine jdbc url from datasource
+org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'sell'
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:339)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:366)
+	at org.springframework.boot.autoconfigure.orm.jpa.DatabaseLookup.getDatabase(DatabaseLookup.java:72)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties.determineDatabase(JpaProperties.java:139)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.jpaVendorAdapter(JpaBaseConfiguration.java:105)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$42020d0c.CGLIB$jpaVendorAdapter$5(<generated>)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$42020d0c$$FastClassBySpringCGLIB$$c61423a5.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$42020d0c.jpaVendorAdapter(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1078)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.budongfeng.sell.SellApplication.main(SellApplication.java:14)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'sell'
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:326)
+	... 61 common frames omitted
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'sell'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2191)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2222)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2017)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:779)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:735)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:667)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:482)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77)
+	... 62 common frames omitted
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000342: Could not obtain connection to query metadata : Unknown database 'sell'
+Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+Stopping service [Tomcat]
+
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+Starting SellApplication on 01HL2IXBWRWCH9B with PID 13960 (D:\myworkspace\sell\target\classes started by Administrator in D:\myworkspace\sell)
+The following profiles are active: home
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@16ce702d: startup date [Thu Jan 04 20:24:07 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.ProductInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.ProductCategoryRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.SellerInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.OrderDetailRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.23
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 2316 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@16ce702d: startup date [Thu Jan 04 20:24:07 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.budongfeng.sell.vo.ResultVo<java.util.List<com.budongfeng.sell.dto.OrderDTO>> com.budongfeng.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.budongfeng.sell.vo.ResultVo<com.budongfeng.sell.dto.OrderDTO> com.budongfeng.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.budongfeng.sell.vo.ResultVo com.budongfeng.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.budongfeng.sell.vo.ResultVo<java.util.Map<java.lang.String, java.lang.String>> com.budongfeng.sell.controller.BuyerOrderController.creatOrder(com.budongfeng.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/product/list]}" onto public com.budongfeng.sell.vo.ResultVo com.budongfeng.sell.controller.BuyerProductController.productList(java.lang.String)
+Mapped "{[/seller/category/index],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.index(java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/category/list],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.list(org.springframework.ui.ModelMap)
+Mapped "{[/seller/category/save],methods=[POST]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.catSaveOrUpdate(com.budongfeng.sell.form.CategoryForm,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.PayController.notify(java.lang.String)
+Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/skill/query/{productId}],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SecKillController.query(java.lang.String) throws java.lang.Exception
+Mapped "{[/skill/order/{productId}],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SecKillController.skill(java.lang.String) throws java.lang.Exception
+Mapped "{[/seller/order/list],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/detail],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.detail(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/finish],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.finish(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/cancel],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.cancel(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/list]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/save],methods=[POST]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.save(com.budongfeng.sell.form.ProductForm,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/index],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.productAddOrUpdate(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/on_sale],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.on_sale(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/off_sale],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.off_sale(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/doLogin],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.SellerUserController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse,org.springframework.ui.ModelMap)
+Mapped "{[/seller/logout],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerUserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.ModelMap)
+Mapped "{[/seller/login]}" onto public java.lang.String com.budongfeng.sell.controller.SellerUserController.loginPage(org.springframework.ui.ModelMap)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/qrAuthorize],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.qrauthorize(java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/wechat/qrUserInfo],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.quUserInfo(java.lang.String,java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.budongfeng.sell.controller.WeiXinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Detected @ExceptionHandler methods in sellerExceptionHandler
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering @ServerEndpoint class: class com.budongfeng.sell.service.WebSocket
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 10.612 seconds (JVM running for 11.446)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+@skill request, productId:123456
+Starting SellApplication on 01HL2IXBWRWCH9B with PID 13348 (D:\myworkspace\sell\target\classes started by Administrator in D:\myworkspace\sell)
+The following profiles are active: home
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@16ce702d: startup date [Thu Jan 04 20:32:03 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.ProductInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.ProductCategoryRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.SellerInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.OrderDetailRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.23
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 2158 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@16ce702d: startup date [Thu Jan 04 20:32:03 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.budongfeng.sell.vo.ResultVo<java.util.List<com.budongfeng.sell.dto.OrderDTO>> com.budongfeng.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.budongfeng.sell.vo.ResultVo com.budongfeng.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.budongfeng.sell.vo.ResultVo<com.budongfeng.sell.dto.OrderDTO> com.budongfeng.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.budongfeng.sell.vo.ResultVo<java.util.Map<java.lang.String, java.lang.String>> com.budongfeng.sell.controller.BuyerOrderController.creatOrder(com.budongfeng.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/product/list]}" onto public com.budongfeng.sell.vo.ResultVo com.budongfeng.sell.controller.BuyerProductController.productList(java.lang.String)
+Mapped "{[/seller/category/index],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.index(java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/category/list],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.list(org.springframework.ui.ModelMap)
+Mapped "{[/seller/category/save],methods=[POST]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.catSaveOrUpdate(com.budongfeng.sell.form.CategoryForm,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.PayController.notify(java.lang.String)
+Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/skill/query/{productId}],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SecKillController.query(java.lang.String) throws java.lang.Exception
+Mapped "{[/skill/order/{productId}],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SecKillController.skill(java.lang.String) throws java.lang.Exception
+Mapped "{[/seller/order/list],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/cancel],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.cancel(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/finish],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.finish(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/detail],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.detail(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/list]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/save],methods=[POST]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.save(com.budongfeng.sell.form.ProductForm,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/on_sale],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.on_sale(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/off_sale],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.off_sale(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/index],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.productAddOrUpdate(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/login]}" onto public java.lang.String com.budongfeng.sell.controller.SellerUserController.loginPage(org.springframework.ui.ModelMap)
+Mapped "{[/seller/doLogin],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.SellerUserController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse,org.springframework.ui.ModelMap)
+Mapped "{[/seller/logout],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerUserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.ModelMap)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/qrAuthorize],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.qrauthorize(java.lang.String)
+Mapped "{[/wechat/qrUserInfo],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.quUserInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.budongfeng.sell.controller.WeiXinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Detected @ExceptionHandler methods in sellerExceptionHandler
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering @ServerEndpoint class: class com.budongfeng.sell.service.WebSocket
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 6.955 seconds (JVM running for 7.8)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 67 ms
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+Starting SellApplication on 01HL2IXBWRWCH9B with PID 12948 (D:\myworkspace\sell\target\classes started by Administrator in D:\myworkspace\sell)
+The following profiles are active: home
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@44b3606b: startup date [Thu Jan 04 20:34:01 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.ProductInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.ProductCategoryRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.SellerInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.OrderDetailRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.23
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 2232 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@44b3606b: startup date [Thu Jan 04 20:34:01 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.budongfeng.sell.vo.ResultVo<java.util.List<com.budongfeng.sell.dto.OrderDTO>> com.budongfeng.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.budongfeng.sell.vo.ResultVo<com.budongfeng.sell.dto.OrderDTO> com.budongfeng.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.budongfeng.sell.vo.ResultVo com.budongfeng.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.budongfeng.sell.vo.ResultVo<java.util.Map<java.lang.String, java.lang.String>> com.budongfeng.sell.controller.BuyerOrderController.creatOrder(com.budongfeng.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/product/list]}" onto public com.budongfeng.sell.vo.ResultVo com.budongfeng.sell.controller.BuyerProductController.productList(java.lang.String)
+Mapped "{[/seller/category/index],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.index(java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/category/list],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.list(org.springframework.ui.ModelMap)
+Mapped "{[/seller/category/save],methods=[POST]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.catSaveOrUpdate(com.budongfeng.sell.form.CategoryForm,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.PayController.notify(java.lang.String)
+Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/skill/query/{productId}],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SecKillController.query(java.lang.String) throws java.lang.Exception
+Mapped "{[/skill/order/{productId}],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SecKillController.skill(java.lang.String) throws java.lang.Exception
+Mapped "{[/seller/order/list],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/detail],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.detail(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/finish],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.finish(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/cancel],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.cancel(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/list]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/save],methods=[POST]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.save(com.budongfeng.sell.form.ProductForm,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/off_sale],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.off_sale(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/on_sale],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.on_sale(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/index],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.productAddOrUpdate(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/logout],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerUserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.ModelMap)
+Mapped "{[/seller/doLogin],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.SellerUserController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse,org.springframework.ui.ModelMap)
+Mapped "{[/seller/login]}" onto public java.lang.String com.budongfeng.sell.controller.SellerUserController.loginPage(org.springframework.ui.ModelMap)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/qrAuthorize],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.qrauthorize(java.lang.String)
+Mapped "{[/wechat/qrUserInfo],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.quUserInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.budongfeng.sell.controller.WeiXinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Detected @ExceptionHandler methods in sellerExceptionHandler
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering @ServerEndpoint class: class com.budongfeng.sell.service.WebSocket
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 6.879 seconds (JVM running for 8.266)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+Starting SellApplication on 01HL2IXBWRWCH9B with PID 1480 (D:\myworkspace\sell\target\classes started by Administrator in D:\myworkspace\sell)
+The following profiles are active: home
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@33b1c5c5: startup date [Thu Jan 04 20:35:08 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.ProductInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.ProductCategoryRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.SellerInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.OrderDetailRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.23
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 2141 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@33b1c5c5: startup date [Thu Jan 04 20:35:08 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.budongfeng.sell.vo.ResultVo<java.util.List<com.budongfeng.sell.dto.OrderDTO>> com.budongfeng.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.budongfeng.sell.vo.ResultVo com.budongfeng.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.budongfeng.sell.vo.ResultVo<com.budongfeng.sell.dto.OrderDTO> com.budongfeng.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.budongfeng.sell.vo.ResultVo<java.util.Map<java.lang.String, java.lang.String>> com.budongfeng.sell.controller.BuyerOrderController.creatOrder(com.budongfeng.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/product/list]}" onto public com.budongfeng.sell.vo.ResultVo com.budongfeng.sell.controller.BuyerProductController.productList(java.lang.String)
+Mapped "{[/seller/category/index],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.index(java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/category/list],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.list(org.springframework.ui.ModelMap)
+Mapped "{[/seller/category/save],methods=[POST]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.catSaveOrUpdate(com.budongfeng.sell.form.CategoryForm,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.PayController.notify(java.lang.String)
+Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/skill/query/{productId}],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SecKillController.query(java.lang.String) throws java.lang.Exception
+Mapped "{[/skill/order/{productId}],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SecKillController.skill(java.lang.String) throws java.lang.Exception
+Mapped "{[/seller/order/list],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/cancel],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.cancel(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/detail],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.detail(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/finish],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.finish(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/list]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/save],methods=[POST]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.save(com.budongfeng.sell.form.ProductForm,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/off_sale],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.off_sale(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/on_sale],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.on_sale(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/index],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.productAddOrUpdate(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/logout],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerUserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.ModelMap)
+Mapped "{[/seller/login]}" onto public java.lang.String com.budongfeng.sell.controller.SellerUserController.loginPage(org.springframework.ui.ModelMap)
+Mapped "{[/seller/doLogin],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.SellerUserController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse,org.springframework.ui.ModelMap)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/wechat/qrAuthorize],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.qrauthorize(java.lang.String)
+Mapped "{[/wechat/qrUserInfo],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.quUserInfo(java.lang.String,java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.budongfeng.sell.controller.WeiXinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Detected @ExceptionHandler methods in sellerExceptionHandler
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering @ServerEndpoint class: class com.budongfeng.sell.service.WebSocket
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 6.625 seconds (JVM running for 7.422)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+Starting SellApplication on 01HL2IXBWRWCH9B with PID 7768 (D:\myworkspace\sell\target\classes started by Administrator in D:\myworkspace\sell)
+The following profiles are active: home
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@33b1c5c5: startup date [Thu Jan 04 20:36:11 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.ProductInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.ProductCategoryRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.SellerInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.OrderDetailRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.23
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 2139 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@33b1c5c5: startup date [Thu Jan 04 20:36:11 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.budongfeng.sell.vo.ResultVo<java.util.List<com.budongfeng.sell.dto.OrderDTO>> com.budongfeng.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.budongfeng.sell.vo.ResultVo com.budongfeng.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.budongfeng.sell.vo.ResultVo<com.budongfeng.sell.dto.OrderDTO> com.budongfeng.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.budongfeng.sell.vo.ResultVo<java.util.Map<java.lang.String, java.lang.String>> com.budongfeng.sell.controller.BuyerOrderController.creatOrder(com.budongfeng.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/product/list]}" onto public com.budongfeng.sell.vo.ResultVo com.budongfeng.sell.controller.BuyerProductController.productList(java.lang.String)
+Mapped "{[/seller/category/index],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.index(java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/category/list],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.list(org.springframework.ui.ModelMap)
+Mapped "{[/seller/category/save],methods=[POST]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.catSaveOrUpdate(com.budongfeng.sell.form.CategoryForm,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.PayController.notify(java.lang.String)
+Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/skill/query/{productId}],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SecKillController.query(java.lang.String) throws java.lang.Exception
+Mapped "{[/skill/order/{productId}],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SecKillController.skill(java.lang.String) throws java.lang.Exception
+Mapped "{[/seller/order/list],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/cancel],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.cancel(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/finish],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.finish(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/detail],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.detail(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/list]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/save],methods=[POST]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.save(com.budongfeng.sell.form.ProductForm,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/index],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.productAddOrUpdate(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/on_sale],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.on_sale(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/off_sale],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.off_sale(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/login]}" onto public java.lang.String com.budongfeng.sell.controller.SellerUserController.loginPage(org.springframework.ui.ModelMap)
+Mapped "{[/seller/doLogin],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.SellerUserController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse,org.springframework.ui.ModelMap)
+Mapped "{[/seller/logout],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerUserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.ModelMap)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/qrUserInfo],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.quUserInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/wechat/qrAuthorize],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.qrauthorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.budongfeng.sell.controller.WeiXinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Detected @ExceptionHandler methods in sellerExceptionHandler
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering @ServerEndpoint class: class com.budongfeng.sell.service.WebSocket
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 6.797 seconds (JVM running for 7.595)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+Starting SellApplication on 01HL2IXBWRWCH9B with PID 632 (D:\myworkspace\sell\target\classes started by Administrator in D:\myworkspace\sell)
+The following profiles are active: home
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@16ce702d: startup date [Thu Jan 04 20:45:06 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.ProductInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.ProductCategoryRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.SellerInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.OrderDetailRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.23
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 2230 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@16ce702d: startup date [Thu Jan 04 20:45:06 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.budongfeng.sell.vo.ResultVo<java.util.List<com.budongfeng.sell.dto.OrderDTO>> com.budongfeng.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.budongfeng.sell.vo.ResultVo com.budongfeng.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.budongfeng.sell.vo.ResultVo<com.budongfeng.sell.dto.OrderDTO> com.budongfeng.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.budongfeng.sell.vo.ResultVo<java.util.Map<java.lang.String, java.lang.String>> com.budongfeng.sell.controller.BuyerOrderController.creatOrder(com.budongfeng.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/product/list]}" onto public com.budongfeng.sell.vo.ResultVo com.budongfeng.sell.controller.BuyerProductController.productList(java.lang.String)
+Mapped "{[/seller/category/index],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.index(java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/category/list],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.list(org.springframework.ui.ModelMap)
+Mapped "{[/seller/category/save],methods=[POST]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.catSaveOrUpdate(com.budongfeng.sell.form.CategoryForm,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.PayController.notify(java.lang.String)
+Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/skill/query/{productId}],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SecKillController.query(java.lang.String) throws java.lang.Exception
+Mapped "{[/skill/order/{productId}],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SecKillController.skill(java.lang.String) throws java.lang.Exception
+Mapped "{[/seller/order/list],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/cancel],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.cancel(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/finish],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.finish(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/detail],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.detail(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/list]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/save],methods=[POST]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.save(com.budongfeng.sell.form.ProductForm,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/off_sale],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.off_sale(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/on_sale],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.on_sale(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/index],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.productAddOrUpdate(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/doLogin],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.SellerUserController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse,org.springframework.ui.ModelMap)
+Mapped "{[/seller/logout],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerUserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.ModelMap)
+Mapped "{[/seller/login]}" onto public java.lang.String com.budongfeng.sell.controller.SellerUserController.loginPage(org.springframework.ui.ModelMap)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/qrAuthorize],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.qrauthorize(java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/wechat/qrUserInfo],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.quUserInfo(java.lang.String,java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.budongfeng.sell.controller.WeiXinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Detected @ExceptionHandler methods in sellerExceptionHandler
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering @ServerEndpoint class: class com.budongfeng.sell.service.WebSocket
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 6.867 seconds (JVM running for 7.673)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+Starting SellApplication on 01HL2IXBWRWCH9B with PID 4800 (D:\myworkspace\sell\target\classes started by Administrator in D:\myworkspace\sell)
+The following profiles are active: home
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@33b1c5c5: startup date [Thu Jan 04 20:46:42 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.ProductInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.ProductCategoryRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.SellerInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.OrderDetailRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.23
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 2147 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@33b1c5c5: startup date [Thu Jan 04 20:46:42 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.budongfeng.sell.vo.ResultVo<java.util.List<com.budongfeng.sell.dto.OrderDTO>> com.budongfeng.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.budongfeng.sell.vo.ResultVo com.budongfeng.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.budongfeng.sell.vo.ResultVo<com.budongfeng.sell.dto.OrderDTO> com.budongfeng.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.budongfeng.sell.vo.ResultVo<java.util.Map<java.lang.String, java.lang.String>> com.budongfeng.sell.controller.BuyerOrderController.creatOrder(com.budongfeng.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/product/list]}" onto public com.budongfeng.sell.vo.ResultVo com.budongfeng.sell.controller.BuyerProductController.productList(java.lang.String)
+Mapped "{[/seller/category/index],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.index(java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/category/list],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.list(org.springframework.ui.ModelMap)
+Mapped "{[/seller/category/save],methods=[POST]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.catSaveOrUpdate(com.budongfeng.sell.form.CategoryForm,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.PayController.notify(java.lang.String)
+Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/skill/query/{productId}],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SecKillController.query(java.lang.String) throws java.lang.Exception
+Mapped "{[/skill/order/{productId}],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SecKillController.skill(java.lang.String) throws java.lang.Exception
+Mapped "{[/seller/order/list],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/cancel],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.cancel(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/detail],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.detail(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/finish],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.finish(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/list]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/save],methods=[POST]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.save(com.budongfeng.sell.form.ProductForm,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/on_sale],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.on_sale(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/off_sale],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.off_sale(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/index],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.productAddOrUpdate(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/doLogin],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.SellerUserController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse,org.springframework.ui.ModelMap)
+Mapped "{[/seller/logout],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerUserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.ModelMap)
+Mapped "{[/seller/login]}" onto public java.lang.String com.budongfeng.sell.controller.SellerUserController.loginPage(org.springframework.ui.ModelMap)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/qrUserInfo],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.quUserInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/qrAuthorize],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.qrauthorize(java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.budongfeng.sell.controller.WeiXinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Detected @ExceptionHandler methods in sellerExceptionHandler
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering @ServerEndpoint class: class com.budongfeng.sell.service.WebSocket
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 6.716 seconds (JVM running for 7.506)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+Starting SellApplication on 01HL2IXBWRWCH9B with PID 12060 (D:\myworkspace\sell\target\classes started by Administrator in D:\myworkspace\sell)
+The following profiles are active: home
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@16ce702d: startup date [Thu Jan 04 20:57:10 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.ProductInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.ProductCategoryRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.SellerInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.OrderDetailRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.23
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 2219 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@16ce702d: startup date [Thu Jan 04 20:57:10 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.budongfeng.sell.vo.ResultVo<java.util.List<com.budongfeng.sell.dto.OrderDTO>> com.budongfeng.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.budongfeng.sell.vo.ResultVo<com.budongfeng.sell.dto.OrderDTO> com.budongfeng.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.budongfeng.sell.vo.ResultVo com.budongfeng.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.budongfeng.sell.vo.ResultVo<java.util.Map<java.lang.String, java.lang.String>> com.budongfeng.sell.controller.BuyerOrderController.creatOrder(com.budongfeng.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/product/list]}" onto public com.budongfeng.sell.vo.ResultVo com.budongfeng.sell.controller.BuyerProductController.productList(java.lang.String)
+Mapped "{[/seller/category/index],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.index(java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/category/list],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.list(org.springframework.ui.ModelMap)
+Mapped "{[/seller/category/save],methods=[POST]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.catSaveOrUpdate(com.budongfeng.sell.form.CategoryForm,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.PayController.notify(java.lang.String)
+Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/skill/query/{productId}],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SecKillController.query(java.lang.String) throws java.lang.Exception
+Mapped "{[/skill/order/{productId}],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SecKillController.skill(java.lang.String) throws java.lang.Exception
+Mapped "{[/seller/order/list],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/detail],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.detail(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/finish],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.finish(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/cancel],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.cancel(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/list]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/save],methods=[POST]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.save(com.budongfeng.sell.form.ProductForm,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/index],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.productAddOrUpdate(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/off_sale],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.off_sale(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/on_sale],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.on_sale(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/logout],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerUserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.ModelMap)
+Mapped "{[/seller/doLogin],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.SellerUserController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse,org.springframework.ui.ModelMap)
+Mapped "{[/seller/login]}" onto public java.lang.String com.budongfeng.sell.controller.SellerUserController.loginPage(org.springframework.ui.ModelMap)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/wechat/qrAuthorize],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.qrauthorize(java.lang.String)
+Mapped "{[/wechat/qrUserInfo],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.quUserInfo(java.lang.String,java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.budongfeng.sell.controller.WeiXinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Detected @ExceptionHandler methods in sellerExceptionHandler
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering @ServerEndpoint class: class com.budongfeng.sell.service.WebSocket
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 6.813 seconds (JVM running for 7.621)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+Starting SellApplication on 01HL2IXBWRWCH9B with PID 13308 (D:\myworkspace\sell\target\classes started by Administrator in D:\myworkspace\sell)
+The following profiles are active: home
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@44b3606b: startup date [Thu Jan 04 20:57:56 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Multiple Spring Data modules found, entering strict repository configuration mode!
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.ProductInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.OrderMasterRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.ProductCategoryRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.SellerInfoRepository.
+Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.budongfeng.sell.repository.OrderDetailRepository.
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.23
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 2149 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@44b3606b: startup date [Thu Jan 04 20:57:56 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.budongfeng.sell.vo.ResultVo<java.util.List<com.budongfeng.sell.dto.OrderDTO>> com.budongfeng.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/detail],methods=[GET]}" onto public com.budongfeng.sell.vo.ResultVo<com.budongfeng.sell.dto.OrderDTO> com.budongfeng.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.budongfeng.sell.vo.ResultVo com.budongfeng.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.budongfeng.sell.vo.ResultVo<java.util.Map<java.lang.String, java.lang.String>> com.budongfeng.sell.controller.BuyerOrderController.creatOrder(com.budongfeng.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/product/list]}" onto public com.budongfeng.sell.vo.ResultVo com.budongfeng.sell.controller.BuyerProductController.productList(java.lang.String)
+Mapped "{[/seller/category/index],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.index(java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/category/list],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.list(org.springframework.ui.ModelMap)
+Mapped "{[/seller/category/save],methods=[POST]}" onto public java.lang.String com.budongfeng.sell.controller.CategoryController.catSaveOrUpdate(com.budongfeng.sell.form.CategoryForm,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+Mapped "{[/pay/notify],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.PayController.notify(java.lang.String)
+Mapped "{[/pay/create],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.PayController.create(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/skill/query/{productId}],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SecKillController.query(java.lang.String) throws java.lang.Exception
+Mapped "{[/skill/order/{productId}],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SecKillController.skill(java.lang.String) throws java.lang.Exception
+Mapped "{[/seller/order/list],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.list(java.lang.Integer,java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/detail],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.detail(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/cancel],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.cancel(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/order/finish],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerOrderController.finish(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/list]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.list(java.lang.Integer,java.lang.Integer,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/save],methods=[POST]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.save(com.budongfeng.sell.form.ProductForm,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/on_sale],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.on_sale(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/off_sale],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.off_sale(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/product/index],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerProductController.productAddOrUpdate(java.lang.String,org.springframework.ui.ModelMap)
+Mapped "{[/seller/logout],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.SellerUserController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.ModelMap)
+Mapped "{[/seller/login]}" onto public java.lang.String com.budongfeng.sell.controller.SellerUserController.loginPage(org.springframework.ui.ModelMap)
+Mapped "{[/seller/doLogin],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.budongfeng.sell.controller.SellerUserController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse,org.springframework.ui.ModelMap)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/qrUserInfo],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.quUserInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.authorize(java.lang.String)
+Mapped "{[/wechat/qrAuthorize],methods=[GET]}" onto public java.lang.String com.budongfeng.sell.controller.WechatController.qrauthorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.budongfeng.sell.controller.WeiXinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Detected @ExceptionHandler methods in sellerExceptionHandler
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Registering @ServerEndpoint class: class com.budongfeng.sell.service.WebSocket
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 6.632 seconds (JVM running for 7.745)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456
+@skill request, productId:123456

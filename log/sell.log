@@ -1,0 +1,47 @@
+2017-11-11 17:10:02.494  INFO 8888 --- [main] com.budongfeng.sell.LoggerTest           : Starting LoggerTest on 01HL2IXBWRWCH9B with PID 8888 (started by Administrator in D:\myworkspace\sell)
+2017-11-11 17:10:02.496  INFO 8888 --- [main] com.budongfeng.sell.LoggerTest           : No active profile set, falling back to default profiles: default
+2017-11-11 17:10:02.554  INFO 8888 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@54e22bdd: startup date [Sat Nov 11 17:10:02 CST 2017]; root of context hierarchy
+2017-11-11 17:10:05.592  INFO 8888 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-11-11 17:10:05.638  INFO 8888 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-11-11 17:10:05.748  INFO 8888 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-11-11 17:10:05.750  INFO 8888 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-11-11 17:10:05.754  INFO 8888 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-11-11 17:10:05.832  INFO 8888 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-11 17:10:06.044  INFO 8888 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-11-11 17:10:06.642  INFO 8888 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-11-11 17:10:07.693  INFO 8888 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@54e22bdd: startup date [Sat Nov 11 17:10:02 CST 2017]; root of context hierarchy
+2017-11-11 17:10:07.876  INFO 8888 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-11 17:10:07.878  INFO 8888 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-11 17:10:07.949  INFO 8888 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-11 17:10:07.950  INFO 8888 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-11 17:10:08.035  INFO 8888 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-11 17:10:08.861  INFO 8888 --- [main] com.budongfeng.sell.LoggerTest           : Started LoggerTest in 7.08 seconds (JVM running for 8.375)
+2017-11-11 17:10:08.951  INFO 8888 --- [main] com.budongfeng.sell.LoggerTest           : 你好
+2017-11-11 17:10:08.960  INFO 8888 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@54e22bdd: startup date [Sat Nov 11 17:10:02 CST 2017]; root of context hierarchy
+2017-11-11 17:10:08.965  INFO 8888 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-11-11 17:11:45.950  INFO 6916 --- [main] com.budongfeng.sell.LoggerTest           : Starting LoggerTest on 01HL2IXBWRWCH9B with PID 6916 (started by Administrator in D:\myworkspace\sell)
+2017-11-11 17:11:45.952 DEBUG 6916 --- [main] com.budongfeng.sell.LoggerTest           : Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2017-11-11 17:11:45.952  INFO 6916 --- [main] com.budongfeng.sell.LoggerTest           : No active profile set, falling back to default profiles: default
+2017-11-11 17:11:46.014  INFO 6916 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@65c7a252: startup date [Sat Nov 11 17:11:46 CST 2017]; root of context hierarchy
+2017-11-11 17:11:48.523  INFO 6916 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-11-11 17:11:48.544  INFO 6916 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-11-11 17:11:48.651  INFO 6916 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-11-11 17:11:48.653  INFO 6916 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-11-11 17:11:48.655  INFO 6916 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-11-11 17:11:48.721  INFO 6916 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-11 17:11:48.911  INFO 6916 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-11-11 17:11:49.481  INFO 6916 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-11-11 17:11:50.338  INFO 6916 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@65c7a252: startup date [Sat Nov 11 17:11:46 CST 2017]; root of context hierarchy
+2017-11-11 17:11:50.473  INFO 6916 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-11 17:11:50.476  INFO 6916 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-11 17:11:50.525  INFO 6916 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-11 17:11:50.526  INFO 6916 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-11 17:11:50.588  INFO 6916 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-11 17:11:51.049  INFO 6916 --- [main] com.budongfeng.sell.LoggerTest           : Started LoggerTest in 5.712 seconds (JVM running for 6.714)
+2017-11-11 17:11:51.121  INFO 6916 --- [main] com.budongfeng.sell.LoggerTest           : 你好
+2017-11-11 17:11:51.130  INFO 6916 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@65c7a252: startup date [Sat Nov 11 17:11:46 CST 2017]; root of context hierarchy
+2017-11-11 17:11:51.132  INFO 6916 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'

@@ -1,0 +1,4 @@
+Starting SellApplication on 01HL2IXBWRWCH9B with PID 13052 (D:\myworkspace\sell\target\classes started by Administrator in D:\myworkspace\sell)
+The following profiles are active: home
+HV000001: Hibernate Validator 5.3.5.Final
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@feb0f52: startup date [Sun Dec 03 11:23:17 CST 2017]; root of context hierarchy
